@@ -1,0 +1,24 @@
+<article class="hentry">
+  <header>
+    <h1 class="entry-title">
+      {{page.title}}
+    </h1>
+    {% if page.date %}
+      <span class='date'>
+        <small>
+          {{ page.date | date:'%A %b %d, %Y' }}
+        </small>
+      </span>
+    {% endif %}
+  </header>
+{% comment %}Content Below{% endcomment %}
+  <div class="entry-content prose">
+    {{ content }}
+    {% if page.include %}
+      {% include {{page.include}} %}
+    {% endif %}
+  </div>
+  <div class="sharing">
+   {% include articles/sharing.html %}
+  </div>  
+</article>

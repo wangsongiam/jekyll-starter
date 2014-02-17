@@ -1,0 +1,36 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Bud Parr -- @budparr
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3
+    jQuery, Modernizr
+
+
+# THANKS/SOURCES
+
+Jekyll Specific
+@mdo https://github.com/poole/poole (specifically, the gitignore)
+
+davidensinger http://davidensinger.com/2013/04/adding-open-graph-tags-to-jekyll/
+
+
+mikegreiling http://pixelcog.com/blog/2013/jekyll-from-scratch-core-architecture/#adding_pages
+@benbalter https://github.com/benbalter/benbalter.github.com
+
+
+
+
+http://html5boilerplate.com/
+
+
+
+TODO:
+base this on 2.0
+Travis build
+favicon/apple icons
+make local backup of css like the way we serve jquery

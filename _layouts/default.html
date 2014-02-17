@@ -1,0 +1,29 @@
+{% include global/head.html %}
+<body class="{{page.category | replace: ' ','-' | downcase}}{{page.categories | first}}">
+  
+
+  <div class="off-canvas-wrap" id="layout">
+
+    <div class="inner-wrap">
+      
+      {% include nav/nav-top.html %}
+  
+      
+      <section class="main-section row">
+
+        
+  
+        {{content}}
+      </section>
+
+    <div>
+  <div><!--  include livereload.html  -->
+  
+
+      {% include global/footer.html %}
+      {% include global/scripts.html %}
+  
+
+
+  </body>
+</html>

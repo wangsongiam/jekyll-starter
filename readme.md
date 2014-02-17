@@ -1,0 +1,1 @@
+This WILL be a fully formed starter template for Jekyll sites, but for the moment it's not even close to being done.
