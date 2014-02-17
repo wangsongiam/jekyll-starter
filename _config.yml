@@ -1,63 +1,40 @@
-baseurl: http://www.starter.com
-
+# Setup
+baseurl: http://www.jekyllstarter.com
 sitename: Jekyll Starter Site
+tagline:          'A Jekyll Starter Site'
+description:      'In progress theme set for Jekyll
+repo:  https://github.com/...
+
+#Jekyll Options
+# if using more than one Jekyll instance on your local machine
+# port: 
+paginate:         1
+# Permalinks
+permalink:        pretty
+# Dependencies
 markdown: redcarpet
 pygments: true
+#Pages - store all pages in the _pages directory
+include: ['_pages']
+relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory.
+exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CNAME']
 
 
-#options (true/false)
+
+# dev options (true/false)
+# if site is in production, 'production: true'
+production: true
+use_pure_css: false
 use_jquery:
 include_font_awesome:
 include_addthis_sharing:
 
-# Make the site Live 
-# if site is in production, 'production: true'
-production: true
-
-#options
+# options (data)
 google_analytics_id:  
 disqus_id:
 addthis_id: ra-52e194380e6e5e78
-
-#styles
-use_pure: false
-
 # CONTACT FORM http://getsimpleform.com/
 simple_form_api_token: 57f94b63113c3daca6cee129dd495cf0
-
-#Pages - store all pages in the _pages directory
-include: ['_pages']
-relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory.
-
-
-exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CNAME']
-
-# Dependencies
-markdown:         redcarpet
-pygments:         true
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            Poole
-tagline:          'The Jekyll Butler'
-description:      'Base theme for Jekyll themes by @mdo.'
-url:              http://getpoole.com
-
-author:
-  name:           'Mark Otto'
-  url:            https://twitter.com/mdo
-
-paginate:         1
-
-# Custom vars
-version:          1.0.0
-
-github:
-  repo:           https://github.com/poole/poole
-
-
 
 
 #configuration options for http://prose.io editor
