@@ -15,8 +15,8 @@ markdown: redcarpet
 pygments: true
 #Pages - store all pages in the _pages directory
 include: ['_pages']
-relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory.
-exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'assets/scss', 'assets/sass', 'CNAME']
+relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
+exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'scss','bower_components' ,'assets/sass', 'CNAME']
 
 
 
