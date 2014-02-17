@@ -1,16 +1,15 @@
-# Setup
 baseurl: http://www.jekyllstarter.com
-sitename: Jekyll Starter Site
-tagline:          'A Jekyll Starter Site'
-description:      'In progress theme set for Jekyll
-repo:  https://github.com/...
+sitename: 'Jekyll Starter Site'
+tagline: 'A Jekyll Starter Site'
+description: 'In progress theme set for Jekyll'
+repo:  'https://github.com/...'
 
 #Jekyll Options
 # if using more than one Jekyll instance on your local machine
 # port: 
-paginate:         1
+paginate: 1
 # Permalinks
-permalink:        pretty
+permalink:  pretty
 # Dependencies
 markdown: redcarpet
 pygments: true
