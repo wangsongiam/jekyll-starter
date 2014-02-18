@@ -1,0 +1,65 @@
+// ------------------------------------------------------------
+// Navigation module (example)
+// ------------------------------------------------------------
+@if $include-sidebar-left != false {
+
+    $sidebar-width:15em;
+    $sidebar-color-background:#888;
+
+    .main-section {
+        @include respond-to($b-vp, $IE9: false) { 
+            margin-left: $sidebar-width;  
+        }
+        @include respond-to-max($b-vp, $IE9: false) {
+            margin-left: 0;  
+        }
+    }
+
+    .sidebar-left {
+
+  text-align: center;
+  padding: 2rem 1rem;
+  color: rgba(255,255,255,.5);
+  background-color: #202020;
+        
+        /* Sidebar nav */
+.sidebar-nav {
+  padding-left: 0;
+  list-style: none;
+}
+.sidebar-nav-item {
+  display: block;
+}
+a.sidebar-nav-item:hover,
+a.sidebar-nav-item:focus {
+  text-decoration: underline;
+}
+.sidebar-nav-item.active {
+  font-weight: bold;
+}
+
+
+
+        background-color: $sidebar-color-background;  
+
+        @include respond-to($b-vp, $IE9: false) {
+          width: $sidebar-width;
+          height: 100%;
+          position: fixed;
+          top: 0;
+          left: 0;
+          overflow-y: scroll;
+          -webkit-overflow-scrolling: touch;
+        }
+
+         @include respond-to-max($b-vp,  $IE9: false) {
+            width: 100%;
+            height: auto;
+            position: static;
+        }
+
+    }
+
+}
+
+
