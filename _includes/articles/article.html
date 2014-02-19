@@ -4,11 +4,11 @@
       {{page.title}}
     </h1>
     {% if page.date %}
-      <span class='date'>
+      <time class='date' datetime="{{ page.date | date:'%Y-%m-%d' }}">
         <small>
           {{ page.date | date:'%A %b %d, %Y' }}
         </small>
-      </span>
+      </time>
     {% endif %}
   </header>
 {% comment %}Content Below{% endcomment %}

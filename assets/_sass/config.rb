@@ -1,6 +1,7 @@
  # Require any additional compass plugins here.
 # -----------------------------------------------------------------------------
-
+require 'singularitygs'
+require 'sass-globbing'
 
 # Set this to the root of your project when deployed:
 # -----------------------------------------------------------------------------
@@ -26,7 +27,7 @@ line_comments = false
 cache = true
 color_output = false # required for Mixture
 
-require 'sass-globbing'
+
 
 
 # SASS core

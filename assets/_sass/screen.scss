@@ -43,32 +43,17 @@ a {
 
 
 
-.main-section {
-    background-color: #f6f6f6;
-    padding-left: 4em;  
-    padding-right: 4em;  
-}
-
 
 footer {
     background-color: lighten($jack-black, 50%);
 }
 
+
+
 /* ::Import styles */
 /* ------------------------------------------------------------ */
-
+@import "singularitygs";
 @import "libs/typography"; 					// Base level typography
 //@import "libs/forms";						// Forms
 @import "add-ons/module-typeset"; 			// Specific typesetting
-@import "add-ons/grid"; 					// Grid system
-
-
-/* ::Print */
-/* ------------------------------------------------------------ */
-
-@media print {
-	body {
-		@include adjust-leading-to(2);
-		font-size: percentage(10 / 16);
-	}
-}
+//@import "add-ons/grid"; 					// Grid system
