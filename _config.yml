@@ -3,7 +3,7 @@ sitename: 'Vernon Silver'
 tagline: 'A Jekyll Starter Site'
 description: 'Senior Writer at Bloomberg News in Rome'
 repo:  'https://github.com/...'
-
+port: 3575
 #Jekyll Options
 # if using more than one Jekyll instance on your local machine
 # port: 
