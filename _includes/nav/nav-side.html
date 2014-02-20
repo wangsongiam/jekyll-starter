@@ -3,23 +3,20 @@
     <!-- Hamburger icon -->
  	<!-- <span></span>
 </a> -->
-<nav id="menu">
-  <div class="pure-menu pure-menu-open">
-		<a href="{{ site.baseurl}}/">
-    	<!-- <object type="image/svg+xml" data="{{site.baseurl}}/assets/img/logo-iliadx-us-circle_v5.svg" style="margin-top:15%;width:125px;margin-left:12.5%;margin-bottom:0;">
-    		<img src="{{site.baseurl}}/assets/img/iliadx-logo-master.png" style="width:125px;">
-    	</object> -->
+<aside class="sidebar-left">
+  
+		<h1>
+			<a href="{{ site.baseurl}}/">
+      	{{site.sitename}}    	
+    	</a>
+    </h1>
 
-<!-- <object type="image/svg+xml" data="{{site.baseurl}}/assets/img/logo/iliad-logo.svg" style="margin-top:15%;width:125px;margin-left:12.5%;margin-bottom:0;">
-        <img src="{{site.baseurl}}/assets/img/iliadx-logo-master.png" style="width:125px;">
-      </object>
- -->
+    {{site.description}}
 
-<!-- <img src="{{site.baseurl}}/assets/img/logo-iliadx-us-circle_v6.png" style="margin-top:15%;width:145px;margin-left:12.5%;margin-bottom:10%;"> -->
-<img src="{{site.baseurl}}/assets/img/logo/logo-iliadx-us-circle-28353d-v2.png" style="margin-top:5%;margin-left:6%;max-width:190px;margin-bottom:5%;">
-    </a>
-    <!-- TODO: remove this margin and fix it in the svg object  -->
-		<div class="condensed section-heading" style="width:190px;margin-left:8%;font-size:84%;line-height:1.4;text-align:center;font-weight:700;">International Law In Academic and political Debate</div>
-      {% include nav/navigation.html %}
-  </div>
-</nav>
+    
+		  {% include nav/navigation.html %}
+
+      
+  
+
+</aside>

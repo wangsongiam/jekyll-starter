@@ -1,0 +1,52 @@
+article.hentry {
+    
+    padding: 1rem;
+    margin:auto;
+    max-width: $d-vp;
+    overflow: hidden;
+
+    img {
+    	max-width: 100%;
+    }
+    
+    @include respond-to($c-vp, $IE9: false) { 
+    	padding: 4rem;
+    }
+
+    h1 {
+    @extend .as-heading__headline;
+    @extend .as-heading__headline--typeset;
+}
+
+h2 {
+    @extend .as-heading__largest;
+    @extend .as-heading__large--typeset;
+}    
+
+h3 {
+    @extend .as-heading__large;
+    @extend .as-heading__large--typeset;
+}    
+
+
+}
+
+
+small {
+ //@extend .as-heading__smallest;
+ @include adjust-font-size-to($kappa);   
+}
+
+
+p {
+  @extend .as-para--typeset; //add-ons _module-typeset 
+}
+
+blockquote {
+	@extend .is-typeset;
+}
+
+.content img:first-child {
+  float: left;
+  margin: .5rem 1rem 0 0; 
+}

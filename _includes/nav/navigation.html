@@ -1,9 +1,9 @@
 <ul class="nav">
   <li><a href="{{ site.baseurl}}/">Home</a></li>
-{% for topics in site.data.topics %}
-	<li id="{{topics.slug}}" class="menu-item{% if page.url contains topics.slug  %} active{% endif %}">
-		<a href="/{{topics.slug}}">
-			{{topics.topic}}
+{% for links in site.data.navigation %}
+	<li id="{{links.slug}}" class="menu-item{% if page.url contains links.slug  %} active{% endif %}">
+		<a href="/{{links.slug}}/">
+			{{links.name}}
 		</a>
 	</li>
 {% endfor %}

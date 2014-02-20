@@ -1,9 +1,8 @@
 ---
 layout: page
-title: About
-include: snippets/form-contact.html
-permalink: /about/
+title: About Vernon
+# include: snippets/form-contact.html
+permalink: about/
+sharing: false
 ---
-This is the about page. Nor did such soothing scenes, however temporary, fail of at least as temporary an effect on Ahab. But if these secret golden keys did seem to open in him his own secret golden treasuries, yet did his breath upon them prove but tarnishing.
-
-Oh, grassy glades! oh, ever vernal endless landscapes in the soul; in ye,&mdash;though long parched by the dead drought of the earthy life,&mdash;in ye, men yet may roll, like young horses in new morning clover; and for some few fleeting moments, feel the cool dew of the life immortal on them. Would to God these blessed calms would last. But the mingled, mingling threads of life are woven by warp and woof: calms crossed by storms, a storm for every calm. There is no steady unretracing progress in this life; we do not advance through fixed gradations, and at the last one pause:&mdash;through infancy's unconscious spell, boyhood's thoughtless faith, adolescence' doubt (the common doom), then scepticism, then disbelief.
+![Vernon Silver](/assets/img/vernon_silver_photo.jpg) An Oxford-trained archaeologist and award-winning journalist, Vernon Silver is a senior writer at Bloomberg News in Rome. His distinguished reporting on art and culture has appeared in the New York Times, the Boston Globe, Spy magazine, and other publications. Silver has won a George Polk Award, an Overseas Press Club of America Award, and has been honored by the Society of Professional Journalists. A native New Yorker, he graduated from Brown University, studied Egyptology at the American University in Cairo, and earned a master’s and doctorate in archaeology at Oxford. Silver lives in Rome.
