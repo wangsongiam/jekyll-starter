@@ -15,11 +15,20 @@ article.hentry {
 
     h1 {
     @extend .as-heading__headline;
-    //@extend .as-heading__headline--typeset;
+    @extend .as-heading__headline--typeset;
 }
 
+h2 {
+    @extend .as-heading__largest;
+    @extend .as-heading__large--typeset;
+}    
 
-    
+h3 {
+    @extend .as-heading__large;
+    @extend .as-heading__large--typeset;
+}    
+
+
 }
 
 
