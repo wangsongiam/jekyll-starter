@@ -1,10 +1,10 @@
 <ul class="nav">
-  <li><a href="{{ site.baseurl}}/">Home</a></li>
+  <a href="/"><li class="sidebar-nav-item">home</li></a>
 {% for links in site.data.navigation %}
-	<li id="{{links.slug}}" class="menu-item{% if page.url contains links.slug  %} active{% endif %}">
-		<a href="/{{links.slug}}/">
+	<a href="/{{links.slug}}/">
+		<li id="{{links.slug}}" class="sidebar-nav-item{% if page.url contains /links.slug/  %} active{% endif %}">
 			{{links.name}}
-		</a>
-	</li>
+		</li>
+	</a>	
 {% endfor %}
 </ul>

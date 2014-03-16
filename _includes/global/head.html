@@ -30,9 +30,12 @@
 
       {% if site.use_pure_css == true %}
         <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.4.2/pure-min.css">    
-
         {% else %}
-        <link href='{{site.baseurl}}/assets/css/screen.css' rel='stylesheet' />
+        <link href='{{site.baseurl}}/assets/css/screen.css?14022509211 ' rel='stylesheet' type="text/css" />
+      {% endif %}
+
+      {% if site.include_font_awesome %}
+          <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
       {% endif %}
 
       
@@ -41,8 +44,16 @@
 
 
       <!--[if lt IE 9]>
-        <script src="{{ theme:js src='{{site.baseurl}}/assets/js/html5shiv.js' }}"></script>
-        <script src="{{ theme:js src='{{site.baseurl}}/assets/js/respond.js' }}"></script>
+        <script>
+          document.createElement('header');
+          document.createElement('nav');
+          document.createElement('section');
+          document.createElement('article');
+          document.createElement('aside');
+          document.createElement('footer');
+        </script>
+        <script src="{{site.baseurl}}/assets/js/html5shiv.js"></script>
+        <script src="{{site.baseurl}}/assets/js/respond.js"></script>
       <![endif]-->
 
       <!--[if lte IE 7]>
@@ -52,4 +63,7 @@
     {% if site.production == true %}
       {% include global/analytics.html %}
     {% endif %}
+
+<link rel="stylesheet" type="text/css" href="//cloud.typography.com/7044452/646584/css/fonts.css" />
+    
   </head>

@@ -38,33 +38,84 @@ a {
 		@include force-wrap;
 	}
 }
+
 /* ::BPNY styles */
 /* ------------------------------------------------------------ */
 
-body.home .sidebar-right {
-	display:none;
+
+.edit-article, .edit-article a {
+	color: #CCC;
+}
+footer {
+	z-index:1000;
+	background-color:$sidebar-right-color-background;
+		
+		@include respond-to($sidebar-right-breakpoint, $IE9: false) {
+			//background-color:$body-color;
+			position:fixed;
+			bottom:0;
+			right:1;
+		}
+
+		text-align:center;
+		padding:1em;
+		@extend small;
 }
 
+footer ul li {
+	display:inline-block;
+	margin-right:2em;
+}
 
+li {
+	margin-bottom:1em;
+}
+
+img {
+	@include single-box-shadow;
+}
+
+body.book hr {
+	width:50%;
+	
+}
+
+.sidebar-left h1{
+	font-size:43px;
+	margin-bottom:1rem;
+	a {
+		color: lighten($sidebar-color, 26%);
+	}
+}
+
+.searchbox {margin:2em 0;}
+@include respond-to-min-max($sidebar-left-breakpoint, $sidebar-right-breakpoint, $IE9: false) {
+.sidebar-left h1 {
+	-moz-transform: rotate(-90deg);
+-webkit-transform: rotate(-90deg);
+-o-transform: rotate(-90deg);
+-ms-transform: rotate(-90deg);
+transform: rotate(-90deg);
+margin-top: 2em;
+margin-bottom: 2em;
+}
+}
+
+.sidebar-left h1 a {
+	color: $kind-of-blue;
+
+}
 
 /* ::Import styles */
 /* ------------------------------------------------------------ */
+@import "add-ons/buttons";
+//@import "add-ons/font-awesome/scss/font-awesome";
+@import "add-ons/fontello"; //MAY DELETE THIS IN FAVOR OF FONT AWESOME
 @import "singularitygs";
 @import "libs/typography"; 					// Base level typography
 //@import "libs/forms";						// Forms
 @import "add-ons/module-typeset"; 			// Specific typesetting
 //@import "add-ons/grid"; 					// Grid system
-
-
-$grids: 3;
-$grids: add-grid(6 at 500px);
-$grids: add-grid(12 at 700px);
-$grids: add-grid(2 8 2 at 900px);
-$grids: add-grid(1 3 5 7 9 at 1100px);
-
-$gutters: 1/3;
-$gutters: add-gutter(.25 at 900px);
-
-.content-page {
-	@include grid-span(3);
+h2, h3, h4, h5 {
+  margin-top: 1em;
 }

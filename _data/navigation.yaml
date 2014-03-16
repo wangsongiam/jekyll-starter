@@ -1,6 +1,6 @@
 -
- name: Writings
- slug: writings
+ name: about
+ slug: about
 -
- name: "<em>The Lost Chalice</em>"
- slug: books/the-lost-chalice
+ name: archive
+ slug: archive
