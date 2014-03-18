@@ -3,6 +3,11 @@
 //live reload
 //compile less files, minimize less files, concatenate css/less files,
 //move bower components to proper directories (e.g.js files)
+// http://www.pletscher.org/blog/2013/05/27/website.html
+// https://gist.github.com/dannygarcia/3753650
+// https://github.com/gruntjs/grunt-contrib-uglify
+// http://gruntjs.com/getting-started
+// http://www.nitinh.com/2013/05/getting-started-with-grunt-bower/
 
 'use strict';
 var LIVERELOAD_PORT = 35729;
@@ -56,7 +61,7 @@ module.exports = function (grunt) {
 	// plugin tasks
 	grunt.loadNpmTasks('grunt-jekyll');
 
-  
+
 
 
 
