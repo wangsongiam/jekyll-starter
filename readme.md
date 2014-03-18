@@ -8,4 +8,4 @@ Instructions for declaring which sidebars to use
 Settings + template
 
 #### TO DO
-- [] figure out grunt file commands
+- figure out grunt file commands
