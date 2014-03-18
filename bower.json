@@ -24,7 +24,6 @@
         "preboot": "latest",
         "normalize-css": "latest",
         "respond": "latest",
-        "html5shiv": "latest",
-        "modernizer": "latest"
+        "html5shiv": "latest"
     }
 }
