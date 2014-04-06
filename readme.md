@@ -8,4 +8,10 @@ Instructions for declaring which sidebars to use
 Settings + template
 
 #### TO DO
-- figure out grunt file commands
+- finish test posts
+
+#### Install
+update local variables and options in _config file_
+run bundle update //updates gems
+make sure .bowerrc indicates the directory where you want your files installed.
+run bower install //updates packages via bower

@@ -1,4 +1,5 @@
-//adds anchor to headings ala ben.balter.com
+//adds anchor to headings ala http://ben.balter.com/2014/03/13/pages-anchor-links/
+// dependency: /assets/css/_sass/add-ons/headings-links.scss
 (function() {
   $(function() {
     return $(".entry-content h2, .entry-content h3, .entry-content h4, .entry-content h5, .entry-content h6").each(function(i, el) {

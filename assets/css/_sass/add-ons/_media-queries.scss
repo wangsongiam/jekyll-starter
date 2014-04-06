@@ -1,0 +1,54 @@
+// -------------------------------------------------------
+// Media queries
+// -------------------------------------------------------
+
+
+// Reference widths from settings file
+@mixin respond-to($media-min, $IE9: true) {
+    @if $IE9 == true {
+        .lt-ie9 & {
+            @content;
+        }
+        @media screen and (min-width: $media-min)  {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $media-min) {
+            @content;
+        }
+    }
+}
+
+@mixin respond-to-max($media-max, $IE9: true) {
+    @if $IE9 == true {
+        .lt-ie9 & {
+            @content;
+        }
+        @media screen and (max-width: $media-max - 1px)  {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (max-width: $media-max - 1px) {
+            @content;
+        }
+    }
+}
+
+
+@mixin respond-to-min-max($media-min, $media-max, $IE9: true) {
+    @if $IE9 == true {
+        .lt-ie9 & {
+            @content;
+        }
+        @media screen and (min-width: $media-min) and (max-width: $media-max)  {
+            @content;
+        }
+    }
+    @else {
+         @media screen and (min-width: $media-min) and (max-width: $media-max) {
+            @content;
+        }
+    }
+}

@@ -22,6 +22,6 @@
         "jquery": "latest",
         "respond": "latest",
         "html5shiv": "latest",
-        "vertical-rhythm": "latest"
+        "normalize-scss": "latest"
     }
 }
