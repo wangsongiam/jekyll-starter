@@ -1,18 +1,27 @@
-
-{{site.sitename}}
-<nav class="top-bar" data-topbar data-options="is_hover: false">
-  <div class="title-area">
-      
-    <div class="name show-for-large-upTK">
-
-      <h1 class="subheading site-heading" style="display:inline;">
-              {{ sitename | replace: 'x','<sup>x</sup>'}}{% for topics in site.data.topics  %}{% if page.url contains topics.slug  %}{% if topics.source %}<span class="show-for-medium-up"> - {{topics.source}}  </span>
-            
-          {% endif %}
-        {% endif %}
-      {% endfor %}
-      </h1>
+<header class="navigation">
+  <div class="menu-wrapper">
+    <a href="javascript:void(0)" class="logo">
+      <img src="https://raw.github.com/Magnus-G/Random/master/placeholder_logo_1.png" alt="">
+    </a>
+    <p class="navigation-menu-button" id="js-mobile-menu">MENU</p>
+    <div class="nav">  
+      {% include nav/navigation.html %}
     </div>
-      <span class="toggle-topbar menu-iconTK"><a href="#" id="menuLink"><span>menu</span></a></span>
   </div>
-</nav>
+</header>
+
+<script>
+  $(function() {
+    var menu = $('#navigation-menu');
+    var menuToggle = $('#js-mobile-menu');
+
+    $(menuToggle).on('click', function(e) {
+      e.preventDefault();
+      menu.slideToggle(function(){
+        if(menu.is(':hidden')) {
+          menu.removeAttr('style');
+        }
+      });
+    });
+  });
+</script>
