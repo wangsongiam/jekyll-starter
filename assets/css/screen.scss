@@ -1,30 +1,37 @@
-//getting started
+// getting started
 // gem install bourbon neat bitters
-// bourbon  install
-// bitters install
+// cd _sass
+// bitters install 
+// cd _sass/libs
+// bourbon install
 // neat install
-// refills and add-ons are installed manuall
+// uncomment and change neat directory in bitters/_bitters
+// refills and add-ons (modules) are installed manually
 
 // sass --watch --style compressed screen.scss:screen.css
 // sass --watch --style expanded screen.scss:screen.css
 
 
-//@import "../_bower_components/normalize-scss/_normalize";
-
-@import "_sass/bourbon/bourbon";
-@import "_sass/neat/neat";
-//@import "_sass/bitters/variables";
+@import "../_bower_components/normalize-scss/_normalize";
+@import "_sass/libs/bourbon/bourbon";
 @import "_sass/bitters/bitters";
+@import "_sass/libs/neat/neat";
 
 
 
+@import "_sass/modules/article";
 
-//@import "_sass/add-ons/article";
-
-//@import "_sass/add-ons/navigation-side";
+@import "_sass/modules/navigation-side";
 
 //@import "_sass/refills/nav-top";
 
 //@import "_sass/refills/accordian";
 
-//@import "_sass/add-ons/splash";
+//@import "_sass/modules/splash";
+
+
+// .element {
+//   @include media($medium-screen-up) {
+//     @include span-columns(4);
+//   }
+// }

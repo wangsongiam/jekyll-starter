@@ -1,6 +1,6 @@
 // Neat Settings -- uncomment if using Neat
 ///////////////////////////////////////////////////////////////////////////////
-@import "../neat/neat-helpers"; // or "neat/neat-helpers" when not in Rails
+@import "../libs/neat/neat-helpers"; // or "neat/neat-helpers" when not in Rails
  @import "grid-settings";
 
 
@@ -10,7 +10,7 @@
 @import "extends/base";
 @import "mixins/base";
 @import "typography";
-@import "forms";
-@import "tables";
+//@import "forms";
+//@import "tables";
 @import "lists";
 //@import "flashes"; //warning messages

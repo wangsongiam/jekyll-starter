@@ -1,0 +1,20 @@
+$splash-height: 500px !default;
+$splash-color: #999 !default;
+$splash-color-background:#554f45 !default;
+.splash {
+	margin-top: $navigation-height * -1;
+  height: $splash-height;
+  max-height:$splash-height;
+  
+//The following items fix our image so that we can use the parallax effect
+//dependency for the parallax effect
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
+.content_splash {
+	margin-top: $splash-height * .85;
+	background-color: white;
+}
