@@ -47,22 +47,26 @@ $sidebar-right-color: #555 !default;
       color: #505050; // TODO: Replace with variable
     }
       /* Sidebar nav */
-      .sidebar-nav {
+      .nav-sidebar {
         padding-left: 0;
         list-style: none;
+        text-align: center;
+        width: 100%;
       }
-      .sidebar-nav-item {
+      .nav-sidebar-item a{
+        width: 100%;
+        text-align: center;
         display: block;
-        padding-top: .35em;
-        padding-bottom: .35em;
+        padding-top: .5em;
+        padding-bottom: .5em;
       }
-      .sidebar-nav-item:hover,
-      .sidebar-nav-item:focus {
-        text-decoration: underline;
-        //background-color: #000;//darken($sidebar-color-background, 25%);
+      .nav-sidebar-item a:hover,
+      .nav-sidebar-item a:focus {
+        text-decoration: none;
+        color: lighten($sidebar-color, 5%);
+        background-color: darken($sidebar-color-background, 25%);
       }
-      .sidebar-nav-item.active a {
-        //font-weight: bold;
+      .nav-sidebar-item.active a {
         color: darken($sidebar-color, 33%);
       }
     hr {

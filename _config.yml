@@ -45,6 +45,6 @@ simple_form_api_token:
 twitter_id: budparr
 
 # navigation options - effects layout/default. May also need options set in sass files
-include_nav-top: true
-include_nav-side-left: false
+include_nav-top: false
+include_nav-side-left: true
 include_nav-side-right: false

@@ -1,5 +1,5 @@
 // INCLUDES
-$include-sidebar-right: true;
+$include-sidebar-right: false;
 $include-sidebar-left: true;
 
 
@@ -30,6 +30,7 @@ $light-green: #E6EFC2;
 
 
 $heading-color: black;
+$navigation-color-active: red;
 
 // Body Color
 $base-body-color: $blue;//white;

@@ -1,7 +1,7 @@
-<ul id="navigation-menu" class="nav">
-	<li class="sidebar-nav-item"><a href="/">home</a></li>
+<ul id="navigation-menu" class="nav-sidebar">
+	<li class="nav-sidebar-item"><a href="/">home</a></li>
 	{% for links in site.data.navigation %}		
-		<li id="{{links.slug}}" class="sidebar-nav-item{% if page.url contains /links.slug/  %} active{% endif %}">
+		<li id="{{links.slug}}" class="nav-sidebar-item{% if page.url contains /links.slug/  %} active{% endif %}">
 			<a href="/{{links.slug}}/">{{links.name}}</a>
 		</li>
 	{% endfor %}
