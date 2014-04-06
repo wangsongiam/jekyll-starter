@@ -2,4 +2,7 @@
 layout: default
 section: page
 ---
+{% if page.splash_image %}
+	{% include snippets/page-splash.html %}
+{% endif %}
 {% include articles/article.html %}

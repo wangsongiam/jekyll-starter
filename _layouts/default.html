@@ -1,13 +1,15 @@
 {% include global/head.html %}
-	<body class="{{page.category | replace: ' ','-' | downcase}}{{page.categories | first}}">
-  	<div class="wrapper">
-    	{% include nav/nav-side.html %}
-    	<section class="content">  
-      	{{content}}
-    	</section>
+  <body class="{{page.category | replace: ' ','-' | downcase}}{{page.categories | first}}">
+    <div class="wrapper">
+      {% include nav/nav-top.html %}      
+      {% include nav/nav-side.html %}
+      <div class="{% if page.splash_image %}content_splash{% endif %}">
+      <section class="content">
+        {{content}}
+      </section>
       {% include nav/nav-side-right.html %}
-			
-  	</div>
-		{% include global/scripts.html %}
+      </div>
+    </div>
+    {% include global/scripts.html %}
   </body>
 </html>

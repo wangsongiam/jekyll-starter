@@ -4,6 +4,7 @@ published: true
 layout: page
 category: News
 series: series1
+splash_image: https://s3.amazonaws.com/ooomf-com-files/MFqGDInrRoC7l5f86CN0_IMG_9852.jpg
 ---
 Welcome to image alignment! The best way to demonstrate the ebb and flow of the various image positioning options is to nestle them snuggly among an ocean of words. Grab a paddle and let's get started.
 
