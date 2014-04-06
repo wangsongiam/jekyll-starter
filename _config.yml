@@ -32,6 +32,7 @@ use_pure_css: false
 use_jquery: true
 include_font_awesome: false
 include_addthis_sharing: false
+bust_css_cache: true
 
 # options (data)
 google_analytics_id: UA-XXXXXXX-X
