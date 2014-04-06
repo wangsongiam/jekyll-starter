@@ -43,3 +43,8 @@ simple_form_api_token:
 # options (social)
 # facebook_id:
 twitter_id: budparr
+
+# navigation options - effects layout/default. May also need options set in sass files
+include_nav-top: true
+include_nav-side-left: true
+include_nav-side-right: true
