@@ -21,15 +21,14 @@ pygments: true
 #Pages - store all pages in the _pages directory
 include: ['_pages']
 relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
-exclude: ['readme.md','license.md','Gemfile','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules']
-
+exclude: ['readme.md','license.md','Gemfile', 'Gemfile.lock','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules', 'README.md', 'prose.yaml']
 
 
 # dev options (true/false)
 # if site is in production, 'production: true'
 production: false
 use_pure_css: false
-use_jquery: true
+use_jquery_cdn: true
 include_font_awesome: false
 include_addthis_sharing: false
 bust_css_cache: true
