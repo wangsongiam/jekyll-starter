@@ -22,6 +22,8 @@ pygments: true
 include: ['_pages']
 relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
 exclude: ['readme.md','license.md','Gemfile', 'Gemfile.lock','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules', 'README.md', 'prose.yaml']
+gems:
+  - jekyll-sitemap
 
 
 # dev options (true/false)
@@ -47,4 +49,4 @@ twitter_id: budparr
 # navigation options - effects layout/default. May also need options set in sass files
 include_nav-top: false
 include_nav-side-left: true
-include_nav-side-right: false
+include_nav-side-right: true
