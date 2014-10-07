@@ -22,6 +22,7 @@
         "jquery": "latest",
         "respond": "latest",
         "html5shiv": "latest",
-        "normalize-scss": "latest"
+        "normalize-scss": "latest",
+        "jquery-backstretch": "latest"
     }
 }

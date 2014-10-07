@@ -2,112 +2,59 @@ article.hentry {
   padding: 1.5rem;
   margin:auto;
   max-width: $d-vp;
-  //min-height: $c-vp;
   overflow: hidden;
+  position:relative;
   header {
     margin-bottom: .5em;
   }
   img {
   	max-width: 100%;
   }
-    @include media($medium-screen-up) {
+  @include media($medium-screen-up) {
   	padding: 2rem 7rem;
   }
 }
-
-//setup typographical style of indented paragraphs
-p:first-child,
-h1 + p,
-h2 + p,
-h3 + p,
-h4 + p,
-h5 + p,
-h6 + p,
-hr + p {
-  text-indent: 0;
-}
-
-p {
-text-indent: 1.5rem;
-}
-
 aside.sidebar-right {
-//@extend .font-var;
-font-size: 12px;//$iota;
-
+  font-size: 12px;
 }
-
-// .tagsNote {
-// background-color: rgba(45,126,165,0.8);
-//  color: #FFF;
-//  padding: 1em;
-// }
-small {
-//@extend .as-heading__smallest;
-//@include adjust-font-size-to($kappa);
-//@extend .font-var;
-}
-
-
-
-blockquote {
-//@extend .as-blockquote--typeset ;
-
-}
-
 .content img:first-child {
-    float: none;
-    margin: 0 0 1.5em 0;
-
+  float: none;
+  margin: 0 0 1.5em 0;
   @include media($small-screen-up) {
-
-      float: left;
-      margin: .5em 1.4em 1.5em 0;
-  }
+    float: left;
+    margin: .5em 1.4em 1.5em 0;
+}
 
 object, embed, iframe {
   max-width: 100% !important;
+  position:absolute;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  margin-top:0
+  }
 }
-
-
-
-}
-
-// the dev class on an article doesn't have indented paragraphs, but has space between them.
-article.dev {
-p {
-  margin-bottom: 1.25em;
-  text-indent: 0;
-}
-}
-
 hr {
-//margin-top:    @line-height-computed;
-//margin-bottom: @line-height-computed;
-margin:1em auto;
-border: 0;
-border-top: 1px solid #EEEEEE;
+  margin:1em auto;
+  border: 0;
+  border-top: 1px solid #EEEEEE;
 }
 
 .screen-reader-text { /* Reusable, toolbox kind of class */
-position: absolute;
-top: -9999px;
-left: -9999px;
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
 }
 
 sup, sub {
-//@include adjust-font-size-to($kappa);
  vertical-align: baseline;
  position: relative;
  top: -0.4em;
 }
-sub { top: 0.4em; }
-
-.footnotes li {
-//@extend small;
-
+sub {
+  top: 0.4em;
 }
-
 .sharing {
-margin-top: 4em;
+  margin-top: 4em;
 }

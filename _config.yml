@@ -1,52 +1,48 @@
-baseurl: http://jekyll-starter.pubspringdev1.com
+url: 
 sitename: 'Jekyll Starter'
 description: 'A base Jekyll theme'
 # do not include  https://github.com/...
-repo: 'budparr/jekyll-starter'
-branch: master
-default_author: "Bud Parr"
-
-#Jekyll Options
-# if using more than one Jekyll instance on your local machine
-# port:
-# paginate tells Jekyll how many posts per page
-# paginate: 1
-# Permalinks
-permalink:  pretty
-# Dependencies
-markdown: kramdown
-#redcarpet:
-# extensions: ['autolink', 'smart']
-pygments: true
 #Pages - store all pages in the _pages directory
 include: ['_pages']
-relative_permalinks: false # won't need this as of 2.0: Deprecation: Starting in 2.0, permalinks for pages in subfolders must be relative to the site source directory, not the parent directory. Also will change exclude directory
-exclude: ['readme.md','license.md','Gemfile', 'Gemfile.lock','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules', 'README.md', 'prose.yaml']
-gems:
-  - jekyll-sitemap
 
+exclude: ['readme.md','license.md','Gemfile', 'Gemfile.lock','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules', 'README.md', 'prose.yaml']
 
 # dev options (true/false)
 # if site is in production, 'production: true'
 production: false
-use_pure_css: false
-use_jquery_cdn: true
-include_font_awesome: false
-include_addthis_sharing: false
 bust_css_cache: true
 
+
 # options (data)
-google_analytics_id: UA-XXXXXXX-X
+google_analytics_id: UA-xxxx
 disqus_id:
 addthis_id:
+
 # CONTACT FORM http://getsimpleform.com/
 simple_form_api_token:
+directory_assets_img: /assets/img/
 
 # options (social)
 # facebook_id:
 twitter_id: budparr
 
-# navigation options - effects layout/default. May also need options set in sass files
-include_nav-top: false
-include_nav-side-left: true
-include_nav-side-right: true
+sass:
+    style: :compressed
+    sass_dir: assets/css/_sass
+
+collections:
+  books:
+    output: true
+    permalink: /book/:path/
+    layout: page
+  reviews:
+    output: false
+
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "pages" # previously `post` in Jekyll 2.2.
+    values:
+      layout: "page"
+

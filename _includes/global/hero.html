@@ -1,0 +1,38 @@
+<div class="hero">
+  <div class="hero-inner">
+    <div class="hero-copy">
+      <div class="column-2-wide"><!-- style="width:45%;float:left;" -->
+        {% for page in site.books | limit: 1 %}
+          <img src="{{ site.directory_assets_img }}{{ page.cover_image }}" class="book-cover" style="width:350px;margin:2em auto;">
+          <!-- <button style="margin-right:3em;"><a href="{{ page.url }}">Read More</a></button> -->
+
+      {% assign now = site.time | date: '%Y%m%d' %}
+      {% assign pubdate = page.date | date: '%Y%m%d' %}
+
+      {% if now <= pubdate %}
+        {% include modal.html text="Preorder"  %}
+      {% else %}
+        {% include modal.html text="Buy" %}
+      {% endif %}
+
+
+
+
+
+        {% endfor %}
+      </div>
+      <div class="column-2-wide padding-top-5"><!-- style="width:45%;float:left;margin-top:8em;" -->
+          <h2>John Benditt</h2>
+        <ul class="list-presentational">
+        {% for news in site.data.news-events limit: 2 %}
+          <li>
+
+              {{ news.title }}
+
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    </div>
+  </div>
+</div>

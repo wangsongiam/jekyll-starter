@@ -1,0 +1,20 @@
+{% assign limit = include.limit %}
+{% assign offset = include.offset %}
+{% assign show_full = include.show_full %}
+{% for review in reviews | limit: {{limit}} | offset: offset %}
+    {% if show_full == 'yes' %}
+      <blockquote class="long_quote">
+        {{ review.content | markdownify }}
+    {% else %}
+      {% if review.excerpt %}
+        <blockquote class="pull_quote">
+          {{ review.excerpt | markdownify }}
+      {% else %}
+        <blockquote class="pull_quote">
+          {{ review.content | markdownify  }}
+      {% endif %}
+    {% endif %}
+    </blockquote>
+    {% if review.title %}<p><small><strong>— {{ review.title | markdownify | remove: '<p>' | remove: '</p>'  }}</p></strong></small>{% endif %}
+    <hr style="margin:1em auto;visibility:hidden;" />
+{% endfor %}

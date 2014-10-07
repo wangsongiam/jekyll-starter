@@ -1,7 +1,19 @@
 ---
+layout: null
 ---
-{% include scripts/jquery.min.js %}
-{% include scripts/widow-control.js %}
-{% include scripts/accordian.js %}
-{% include scripts/nav-top-mobile.js %}
-{% include scripts/smooth-scroll.js %}
+{% include _bower_components/jquery/jquery.min.js %}
+
+$(document).ready(function() {
+  var menu = $('.centered-navigation-menu');
+  var menuToggle = $('.centered-navigation-menu-button');
+  var signUp = $('.sign-up');
+
+  $(menuToggle).on('click', function(e) {
+    e.preventDefault();
+    menu.slideToggle(function(){
+      if(menu.is(':hidden')) {
+        menu.removeAttr('style');
+      }
+    });
+  });
+});

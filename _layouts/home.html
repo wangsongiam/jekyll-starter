@@ -1,0 +1,27 @@
+---
+layout: default
+section: home
+class: home
+---
+{% for post in site.books | limit: 1 %}
+  <section class="section-content">
+    {{ post.title }}
+    <div class="lead">{{ post.content }}</div>
+  </section>
+{% endfor %}
+
+<section class="row row2"></section>
+
+<section class="row row3">
+  <div class="section-content">
+    {% for post in site.books  limit: 1 %}
+      {% assign book = post.slug %}
+    {% endfor %}
+
+    {% assign reviews = site.reviews | where: 'book', book  | sort: 'date' | reverse %}
+    {% include reviews-format.html limit="1" %}
+  </div>
+</section>
+
+
+<section class="row row4"></section>
