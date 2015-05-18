@@ -3,10 +3,13 @@ sitename: 'Jekyll Starter'
 description: 'A base Jekyll theme'
 # do not include  https://github.com/...
 #Pages - store all pages in the _pages directory
+
 include: ['_pages']
+exclude: ['readme.md','license.md','Gemfile', 'CNAME', 'bower.json', 'node_modules', 'bower_components', 'sass', 'gulpfile.js', 'package.json']
 
-exclude: ['readme.md','license.md','Gemfile', 'Gemfile.lock','links.jsonp', 'CNAME', 'rakefile', 'bower.json', 'node_modules', 'README.md', 'prose.yaml']
-
+# Build settings
+markdown: kramdown
+permalink: pretty
 # dev options (true/false)
 # if site is in production, 'production: true'
 production: false
