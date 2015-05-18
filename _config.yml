@@ -29,10 +29,6 @@ directory_assets_img: /assets/img/
 # facebook_id:
 twitter_id: budparr
 
-sass:
-    style: :compressed
-    sass_dir: assets/css/_sass
-
 collections:
   books:
     output: true
