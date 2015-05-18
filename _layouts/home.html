@@ -14,12 +14,6 @@ class: home
 
 <section class="row row3">
   <div class="section-content">
-    {% for post in site.books  limit: 1 %}
-      {% assign book = post.slug %}
-    {% endfor %}
-
-    {% assign reviews = site.reviews | where: 'book', book  | sort: 'date' | reverse %}
-    {% include reviews-format.html limit="1" %}
   </div>
 </section>
 

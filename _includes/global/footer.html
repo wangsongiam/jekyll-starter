@@ -1,48 +1,33 @@
-{% comment %}
-.push and .bg are utility classes we can use to
-stick our footer at the bottom of the page and
-display a full width background image, respectively
-{% endcomment %}
-{% comment %}<div class="push bg"></div>{% endcomment %}
-<footer class="footer-2" id="content-info">
-  <div class="footer-inner">
-    <div class="row" style="padding:3em 0;">
-      <div class="column-3-wide" ><!-- style="height:295px;width:45%;float:left;" -->
-      {% for post in site.books | limit: 1 %}
-        <img src="{{ site.directory_assets_img }}{{ post.cover_image }}" class="book-cover"><!-- style="width:350px;margin:2em auto;" -->
-      {% endfor %}
-      </div>
-      <div class="column-2-wide-push"><!-- style="margin-right:0;width:45%;float:left;" -->
-        {% for page in site.books  limit: 1 %}
-          {% assign book = page.slug %}
-        {% endfor %}
-        {% assign reviews = site.reviews | where: 'book', book  | sort: 'date' | reverse %}
-        {% include reviews-format.html limit="1" offset="1" %}
-        {% for page in site.books  limit: 1 %}
-          {% assign now = site.time | date: '%Y%m%d' %}
-          {% assign pubdate = page.date | date: '%Y%m%d' %}
-            {% if now <= pubdate %}
-              {% include modal.html text="Preorder"  %}
-            {% else %}
-              {% include modal.html text="Buy" %}
-            {% endif %}
-        {% endfor %}
-      </div>
-    </div>
+<!--<div class="wrapper-for-content-outside-of-footer">
+   Uncomment this whole section for a sticky footer. The content of the page should be inside of this .wrapper-for-content-outside-of-footer
+</div>-->
+
+<footer class="footer-2" role="contentinfo">
+  <div class="footer-logo">
+    <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_1.png" alt="Logo image">
   </div>
-<hr style="border-color:#505050;margin-top:4em;" />
-  <div class="row">
-    <ul class="no-bullet">
-      <li class="source-org vcarfd copyright">
-        <a href="{{site.url}}">&copy; {{ site.time | date: '%Y' }} <span class="org fn">{{site.sitename}}</span></a>
-      </li>
-      <li><a href="http://sonnetmedia.net">site by sonnet media</a></li>
+    <ul>
+      <li><a href="javascript:void(0)">About</a></li>
+      <li><a href="javascript:void(0)">Contact</a></li>
+      <li><a href="javascript:void(0)">Products</a></li>
     </ul>
-  </div>
+
+    <div class="footer-secondary-links">
+      <ul>
+        <li><a href="javascript:void(0)">Terms and Conditions</a></li>
+        <li><a href="javascript:void(0)">Privacy Policy</a></li>
+      </ul>
+
+      <ul class="footer-social">
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/facebook-logo-circle.png" alt="Facebook">
+          </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/twitter-logo-circle.png" alt="Twitter">
+        </a></li>
+        <li><a href="javascript:void(0)">
+          <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/youtube-logo-circle.png" alt="YouTube">
+        </a></li>
+      </ul>
+    </div>
 </footer>
-{% if page.background_image %}
-	<img src="/assets/img/{{page.background_image}}" class="bg">
-{% endif %}
-<!-- /footer -->
-
-
