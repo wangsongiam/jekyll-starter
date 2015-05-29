@@ -7,103 +7,45 @@ body {
   line-height: $base-line-height;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  margin: 0;
-  text-rendering: optimizeLegibility; // Fix the character spacing for headings
-  font-weight: 400;
-  color: $heading-color;
-}
-
-h1, .h1 {
-  font-size: $base-font-size * 2.5; // 16 * 2.25 = 36px
-}
-
-h2 {
-  font-size: $base-font-size * 2; // 16 * 2 = 32px
-  
-
-}
-aside h2 {
-      font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
-
-    }
-
-h3 {
-  font-size: $base-font-size * 1.75; // 16 * 1.75 = 28px
-}
-article h3 {
-  font-size: $base-font-size * 1.5; // 16 * 1.75 = 28px
-  margin-top: $heading-line-height;
-  margin-bottom: $heading-line-height * .5;
-}
-
-h4, .h4 {
-  font-size: $base-font-size * 1.5; // 16 * 1.5 = 24px
-}
-
-h5, .h5 {
-  font-size: $base-font-size * 1.25; // 16 * 1.25 = 20px
-}
-
-h6, .h6 {
   font-size: $base-font-size;
- 
+  line-height: $heading-line-height;
+  margin: 0 0 $small-spacing;
 }
 
 p {
-  margin: 0 0 ($base-line-height * .5);
-}
-
-article.hentry {
-  //font-size: $base-font-size * 1.125; // 16 * 1.125 = 18
-  font-size: $base-font-size * 1.0625; // 16 * 1.0625 = 17px
-  line-height: 1.7;
+  margin: 0 0 $small-spacing;
 }
 
 a {
-  @include transition(color 0.1s linear);
-  color: $action-color;// $base-link-color;
+  color: $action-color;
   text-decoration: none;
+  transition: color 0.1s linear;
 
+  &:active,
+  &:focus,
   &:hover {
-    color: darken($action-color, 5%);
+    color: darken($action-color, 15%);
   }
 
-  &:active, &:focus {
-    color: darken($action-color, 5%);
+  &:active,
+  &:focus {
     outline: none;
   }
 }
 
 hr {
-  border-bottom: 1px solid $base-border-color;
+  border-bottom: $base-border;
   border-left: none;
   border-right: none;
   border-top: none;
-  margin: $base-line-height 0;
-}
-
-img {
-  margin: 0;
-  max-width: 100%;
-}
-
-blockquote {
-  border-left: 2px solid $base-border-color;
-  color: lighten($base-font-color, 15);
-  margin: $base-line-height 0;
-  padding-left: $base-line-height / 2;
-}
-
-cite {
-  color: lighten($base-font-color, 25);
-  font-style: italic;
-
-  &:before {
-    content: '\2014 \00A0';
-  }
+  margin: $base-spacing 0;
 }
 
 img,

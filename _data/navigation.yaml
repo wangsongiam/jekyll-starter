@@ -1,6 +1,18 @@
 -
- name: about
+ name: About
  slug: about
 -
- name: archive
- slug: archive
+ name: Office
+ slug: office
+
+-
+ name: Contact
+ slug: contact
+
+-
+ name: Updates
+ slug: updates
+
+-
+ name: Jobs
+ slug: jobs

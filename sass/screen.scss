@@ -14,23 +14,25 @@
 "modules/footer",
 "modules/hero",
 "modules/images",
-"modules/navigation",
+"modules/nav-top",
+"modules/nav-side",
 "modules/quotes";
 
-.wrapper {
-  max-width: 1200px;
-  background-color:#FFF;
-}
-.footer-2 {
-  max-width: 1200px;
-  margin-left:auto;
-  margin-right:auto;
-}
-
 body {
-  background-color: #F0ECE8;
+  background-color: $base-background-color;
 }
 
-.bud {
-  padding-top:4em;
+
+body.home {
+ background-color:$alt-background-color; 
+  .section-content {
+    padding-top: 3em;
+  }
+  .nav-sidebar {
+   padding-top: 13em; 
+  }
+.centered-navigation {
+  padding-top: 8em;
+}
+  
 }

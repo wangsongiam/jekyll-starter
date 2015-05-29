@@ -3,12 +3,11 @@ layout: default
 section: home
 class: home
 ---
-{% for post in site.books | limit: 1 %}
+
   <section class="section-content">
-    {{ post.title }}
-    <div class="lead">{{ post.content }}</div>
+{{ page.content }}
   </section>
-{% endfor %}
+
 
 <section class="row row2"></section>
 

@@ -1,18 +1,21 @@
 {% include global/head.html %}
-<body{% if page.section %} id="{{ page.section}}" {% endif %}class="{% if page.collection %} {{ page.collection }}{% endif %}{% if page.class %} {{ page.class }}{% endif %}">
+<body class="{{page.category | replace: ' ','-' | downcase}}{{page.categories | first}}">
   <div class="wrapper">
-      {% include global/nav-top.html %}
-      {% if page.class == 'home' || page.class == 'books' %}
-        {% include global/hero.html %}
-      {% endif %}
+    {% if site.include_nav-top %}
+      {% include nav/nav-top.html %}      
+    {% endif %}
+    {% if site.include_nav-side-left %}
+      {% include nav/nav-side-left.html %}
+    {% endif %}
     <div class="{% if page.splash_image %}content_splash{% endif %}">
       <section class="content">
         {{content}}
       </section>
-    {% comment %}  {% include nav/nav-side-right.html %}{% endcomment %}
+    {% if site.include_nav-side-right %}
+      {% include nav/nav-side-right.html %}
+    {% endif %}
   </div>
 </div>
-{% include global/footer.html %}
 {% include global/scripts.html %}
 </body>
 </html>
