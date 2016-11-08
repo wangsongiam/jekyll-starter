@@ -1,0 +1,78 @@
+## jekyll-seo-tag
+# These basic values are used with the Jekyll SEO tag https://github.com/jekyll/jekyll-seo-tag#usage
+# but you can also use them anywhere in your site, like this: {{ site.title }} or {{ site.twitter.username }}
+title: "Jekyll Starter"
+description: "A starter for using jekyll"
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+author: []
+twitter:
+  username: budparr
+facebook:
+  app_id:
+  publisher:
+  admins:
+logo: /assets/images/jekyll-white.svg
+google_site_verification:
+github:
+  username: budparr
+owner: The New Dynamic
+
+## jekyll
+incremental: false
+timezone: Etc/GMT
+#baseurl:
+gems:
+  - jekyll-admin
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+#plugins_dir:  ./_app/_plugins
+#layouts_dir:  ./_app/_layouts
+#includes_dir: ./_app/_includes
+
+# Developer
+production: false
+compress_html:
+  ignore:
+    envs: [development]
+  profile: false
+
+
+# CONTENT
+include:
+  - _pages
+
+exclude:
+  - readme.md
+  - license.md
+  - Gemfile
+  - Gemfile.lock
+  - CNAME
+  - node_modules
+  - sass
+  - package.json
+  - postcss.config.js
+
+collections:
+  # landing_pages:
+  #   output: true
+  #   permalink: '/:path/'
+
+defaults:
+  - scope:
+      path: ''
+      type: pages
+    values:
+      layout: page
+  - scope:
+      path: '_pages'
+      type: pages
+    values:
+      layout: page
+      permalink: /:basename/
+  - scope:
+      path: ''
+      type: posts
+    values:
+      layout: page
+      schema: BlogPosting
