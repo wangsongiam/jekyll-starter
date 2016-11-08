@@ -18,7 +18,7 @@ github:
 owner: The New Dynamic
 
 ## jekyll
-baseurl: '/jekyll-starter/'
+baseurl: '/jekyll-starter'
 incremental: false
 timezone: Etc/GMT
 #baseurl:
@@ -27,12 +27,13 @@ gems:
   - jekyll-seo-tag
   - jekyll-sitemap
 
-#plugins_dir:  ./_app/_plugins
-#layouts_dir:  ./_app/_layouts
-#includes_dir: ./_app/_includes
+sass:
+    sass_dir: css/_sass-partials
+    style: compressed
 
 # Developer
 production: false
+
 compress_html:
   ignore:
     envs: [development]
@@ -50,12 +51,13 @@ exclude:
   - Gemfile.lock
   - CNAME
   - node_modules
-  - sass
   - package.json
   - postcss.config.js
 
+
+# http://jekyllrb.com/docs/collections/
 collections:
-  # landing_pages:
+  # example:
   #   output: true
   #   permalink: '/:path/'
 
