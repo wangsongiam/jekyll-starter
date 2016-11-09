@@ -20,11 +20,11 @@ layout: compress
       {% include global/analytics.html %}
     {% endif %}
   </head>
-  <body class="{% if page.class %}{{ page.class }} {% endif %}{{ jekyll.environment }}">
+  <body class="w-100 sans-serif bg-white{% if page.class %} {{ page.class }} {% endif %} {{ page.layout }} {{ jekyll.environment }}">
     {% include global/navigation-top.html %}
-      <main id="content" role="main">
-        {{ content }}
-      </div>
+    <main role="main">
+      {{ content }}
+    </main>
     {% include global/footer.html %}
     {% include global/scripts.html %}
   </body>

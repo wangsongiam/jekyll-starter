@@ -1,5 +1,29 @@
-<header class="center px4 py4 bg-dark-primary-color" role="banner">
-  <img src="{{ site.logo }}" class=" pa1 ba b--black-10 h3 w3" alt="avatar" style="height:90px;">
-  <h1 class="h1 f2-ns fw6 white">{{ site.title }}</h1>
-  <h2 class="h3 silver fw2 ttu tracked">{{ site.description }}</h2>
+<header class="vh-100 dt w-100 tc bg-dark-gray white cover" style="background:url({{ site.baseurl }}/uploads/dummy-hero.jpeg) no-repeat center;">
+  <div class="dtc v-mid">
+    <h2 class="f6 fw1 ttu tracked mb2 lh-title">
+      {{ site.owner }}
+    </h2>
+    <h1 class="f1 f-headline-l fw9 i white-80">
+      {{ site.title }}
+    </h1>
+    <blockquote class="ph0 mh0 measure f4 lh-copy center">
+      <p class="fw1 white-70">
+        {{ site.description }}
+      </p>
+    </blockquote>
+  </div>
 </header>
+
+<div class="w-100 pa3 bg bg-light-gray tc dark-gray">
+  <div class="center w-third-ns">
+    <a href="#" class="link dib">
+      <img src="{{ site.baseurl }}/uploads/email.svg" class="h2" alt="Email" />
+    </a>
+    <a href="#" class="link dib">
+      <img src="{{ site.baseurl }}/uploads/social-facebook.svg" class="h2" alt="Email" />
+    </a>
+    <a href="#" class="link dib">
+      <img src="{{ site.baseurl }}/uploads/social-twitter.svg" class="h2" alt="Email" />
+    </a>
+  </div>
+</div>

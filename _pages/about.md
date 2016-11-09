@@ -12,4 +12,3 @@ One of the **jurors** had a pencil that squeaked. This of course, Alice  could n
 On this the White Rabbit blew three blasts on the trumpet, and then  unrolled the parchment scroll, and read as follows:–
 
 'The Queen of Hearts, she made some tarts, All on a summer day: The Knave of Hearts, he stole those tarts, And took them quite away!'
-<h1>{{ page.layout }}</h1>
