@@ -59,7 +59,7 @@ exclude:
 collections:
   # example:
   #   output: true
-  #   permalink: '/:path/'
+  #   permalink: '/:collection/:path/'
 
 defaults:
   - scope:
