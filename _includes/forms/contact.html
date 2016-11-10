@@ -1,21 +1,37 @@
-ha, this form doesn't do anything right now
-<form accept-charset="UTF-8" action="" method="POST" style="width:80%;">
+{% assign input_classes = 'b pa2 input-reset ba bg-transparent hover-bg-black hover-white w-100'  %}
+
+<form class="measure" accept-charset="UTF-8" action="" method="POST">
   <input type="hidden" name="utf8" value="✓">
-    {% comment %} <input type='hidden' name='redirect_to' value='/about/thank-you/' /> {% endcomment %}
+  <fieldset id="sign_up" class="ba b--transparent ph0 mh0">
 
-    <label class="label block">Name</label>
-    <input tabindex="6" type="text" name="name" id="name-field" class="input" size="40" maxlength="35" />
-
-    <label class="label block">Email Address</label>
-    <input tabindex="7" type="text" name="email" id="email-field" class="input" size="40" maxlength="35" />
+    <legend class="f4 fw6 ph0 mh0">Sign In</legend>
 
 
-    <label class="label block">Your Note</label>
-    <textarea tabindex="8" name="message" id="message-field" class="textarea" rows="6"></textarea>
+    <div class="mv3">
+      <label class="db fw6 lh-copy f6" for="password">Name</label>
+      <input tabindex="6" type="text" name="name" id="name-field" class="{{input_classes}}" size="40" maxlength="35" />
+    </div>
 
-    <button type="submit" class="btn font-family-primary h1 bg-red white bg-hover-black rounded">Submit</button>
+    <div class="mt3">
+      <label class="db fw6 lh-copy f6" for="email-address">Email</label>
+      <input class="{{ input_classes }}" type="email" name="email-address"  id="email-address">
+    </div>
 
+
+  </fieldset>
+
+  <div class="">
+    <input class="b ph3 pv2 input-reset ba b--black bg-transparent grow pointer f6 dib" type="submit" value="Submit">
+  </div>
+
+  <div class="lh-copy mt3">
+
+
+  </div>
 </form>
+
+
+
 
 
 <style type="text/css">

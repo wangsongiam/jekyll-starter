@@ -1,11 +1,11 @@
 <a id="skip-navigation" class="clip z-9999 bg-dark-blue white pa3 dib link" href="#content">Skip Navigation</a>
 <nav class="db dt-l w-100 fixed bg-white border-box pa3 ph5-l">
-  <a class="f3 db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="{{ site.baseurl | default: '/' }}" title="Home">
+  <a class="f3 db dtc-l v-mid mid-gray link dim w-100 w-25-l tc tl-l mb2 mb0-l" href="{{ site.url | relative_url }}" title="Home">
     {{ site.title }}
   </a>
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
     {% for object in site.data.navigation-links %}
-      <a class="link dim dark-gray f6 f5-l{% unless forloop.last %} dib mr3 mr4-l{% endunless %}{% if page.url == object.url %} accent-color{% else %} text-on-primary-color{% endif %}" href="{{ object.url | prepend:site.baseurl }}" title="Home">
+      <a class="link dim dark-gray f6 f5-l{% unless forloop.last %} dib mr3 mr4-l{% endunless %}{% if page.url == object.url %} accent-color{% else %} text-on-primary-color{% endif %}" href="{{ object.url | relative_url }}" title="Home">
         {{ object.title }}
       </a>
     {% endfor %}

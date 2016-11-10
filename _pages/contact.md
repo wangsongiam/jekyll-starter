@@ -2,4 +2,4 @@
 title: Contact
 include: forms/contact.html
 ---
-some content here
+Thanks for getting in touch. 
