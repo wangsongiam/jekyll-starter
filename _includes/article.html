@@ -21,7 +21,7 @@
   </header>
 
   <div class="e-content lh-copy measure" itemprop="articleBody">
-    {{ content }}
+    {{ page.content | markdownify }}
   </div>
 
     {% if page.include %}
