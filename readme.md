@@ -1,5 +1,7 @@
 # Jekyll Starter
 
+[Exercise Snippets Gist](https://gist.github.com/budparr/64ef15890fe97eb4e4bcaa5b029a91e5)
+
 ## Lean Jekyll starter
 
 1) git clone [repo]
