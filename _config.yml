@@ -18,7 +18,7 @@ github:
 owner: The New Dynamic
 
 ## jekyll
-baseurl: '/jekyll-starter'
+#baseurl: '/jekyll-starter'
 incremental: false
 timezone: Etc/GMT
 #baseurl:
