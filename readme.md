@@ -36,3 +36,4 @@
 
 [The A11Y Project: A community-driven effort to make web accessibility easier.](http://a11yproject.com/)  
 [Tachyons CSS](http://tachyons.io/)
+[Github Pages hosting help page](https://help.github.com/articles/about-github-pages-and-jekyll/)
