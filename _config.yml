@@ -32,8 +32,12 @@ sass:
     style: compressed
 
 # Developer
+
+# use this to manually trigger noindex, nofollow in development
+# gh-pages always adds the "production" environment variable
 production: false
 
+# http://jch.penibelst.de/
 compress_html:
   ignore:
     envs: [development]
@@ -61,6 +65,7 @@ collections:
   #   output: true
   #   permalink: '/:collection/:path/'
 
+# http://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
   - scope:
       path: ''
