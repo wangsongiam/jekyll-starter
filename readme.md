@@ -1,13 +1,10 @@
 # Jekyll Starter
 
+[Presentation on Google Docs](https://docs.google.com/presentation/d/1XRW5y-Rarne05XJZzksuklwe5FicQVVYrHVduQ015hU/edit?usp=sharing)
+
 [Exercise Snippets Gist](https://gist.github.com/budparr/64ef15890fe97eb4e4bcaa5b029a91e5)
 
-## Lean Jekyll starter
-
-1) git clone [repo]
-2) bundle install
-3) bundle exec jekyll serve -w
-
+##  Jekyll starter
 
 
 ## Install Bundler
@@ -46,7 +43,7 @@ Go to http://localhost:4000/ in your browser
 
 [the New Dynamic Jekyll page with links to 220+ articles, tutorials, tools and resources](https://www.thenewdynamic.org/tool/jekyll/)  
 [Ben Balter, Jekyll Style Guide](http://ben.balter.com/jekyll-style-guide/)  
-[Jekyll Cheat Sheet and Tutorials](http://jekyll.tips/jekyll-cheat-sheet/)  
+[Jekyll Cheat Sheet and Tutorials (Highly recommended)](http://jekyll.tips/jekyll-cheat-sheet/)  
 [Github Pages](https://pages.github.com/)  
 [Github Pages dependency versions (to see what version of Jekyll, etc it's running)](https://pages.github.com/versions/)
 
