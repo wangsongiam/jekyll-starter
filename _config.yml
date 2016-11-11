@@ -58,7 +58,6 @@ exclude:
   - node_modules
   - package.json
   - postcss.config.js
-  - gulpfile.js
 
 
 # http://jekyllrb.com/docs/collections/
