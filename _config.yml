@@ -47,6 +47,7 @@ compress_html:
 # CONTENT
 include:
   - _pages
+  - _staff
 
 exclude:
   - readme.md
@@ -65,6 +66,11 @@ collections:
   # example:
   #   output: true
   #   permalink: '/:collection/:path/'
+
+# Server Config options
+livereload: true     # You no longer need to include --livereload
+# reload_port: 5678    # If you don't want to use the default port
+
 
 # http://jekyllrb.com/docs/configuration/#front-matter-defaults
 defaults:
