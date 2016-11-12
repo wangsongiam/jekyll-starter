@@ -4,9 +4,9 @@
     {{ site.title }}
   </a>
   <div class="db dtc-l v-mid w-100 w-75-l tc tr-l">
-    {% for object in site.data.navigation-links %}
-      <a class="link dim dark-gray f6 f5-l{% unless forloop.last %} dib mr3 mr4-l{% endunless %}{% if page.url == object.url %} accent-color{% else %} text-on-primary-color{% endif %}" href="{{ object.url | relative_url }}" title="Home">
-        {{ object.title }}
+    {% for obj in site.data.navigation-links %}
+      <a class="link dim dark-gray f6 f5-l{% unless forloop.last %} dib mr3 mr4-l{% endunless %}{% if page.url == obj.url %} accent-color{% else %} text-on-primary-color{% endif %}" href="{{ obj.url | relative_url }}" title="Home">
+        {{ obj.title }}
       </a>
     {% endfor %}
   </div>
