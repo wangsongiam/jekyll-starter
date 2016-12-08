@@ -48,6 +48,7 @@ compress_html:
 include:
   - _pages
   - _staff
+  - _posts
 
 exclude:
   - readme.md
@@ -62,13 +63,16 @@ exclude:
 
 # http://jekyllrb.com/docs/collections/
 collections:
+  staff:
+    output: true
+    permalink: '/ourteam/:path/'
   # example:
   #   output: true
   #   permalink: '/:collection/:path/'
 
 # Server Config options
 livereload: true     # You no longer need to include --livereload
-# reload_port: 5678    # If you don't want to use the default port
+# reload_port: 1111    # If you don't want to use the default port
 
 
 # http://jekyllrb.com/docs/configuration/#front-matter-defaults
@@ -78,6 +82,7 @@ defaults:
       type: pages
     values:
       layout: page
+      foo: bass
   - scope:
       path: '_pages'
       type: pages
@@ -85,8 +90,17 @@ defaults:
       layout: page
       permalink: /:basename/
   - scope:
-      path: ''
+      path: '_posts'
       type: posts
     values:
+      layout: post
+      permalink: /post/:title/
+      # schema: BlogPosting
+  - scope:
+      path: ''
+      type: staff
+    values:
       layout: page
-      schema: BlogPosting
+      # permalink: /:basename/
+
+port: 1111
