@@ -1,3 +1,15 @@
 ---
+layout: default
+
 ---
 
+<div id="content" class="center measure-wide f5 pv5 lh-copy hp2"> 
+  {{ page.title }}
+  {{ page.content }}
+
+  {%for object in site.staff %}
+  {{ object.title |markdownify }}
+  {% endfor %}
+
+
+</div>
