@@ -1,7 +1,7 @@
 ## jekyll-seo-tag
 # These basic values are used with the Jekyll SEO tag https://github.com/jekyll/jekyll-seo-tag#usage
 # but you can also use them anywhere in your site, like this: {{ site.title }} or {{ site.twitter.username }}
-title: "Jekyll Starter"
+title: "Song Wang"
 description: "A starter for using jekyll"
 url: "https://budparr.github.io/jekyll-starter/" # the base hostname & protocol for your site
 author: []

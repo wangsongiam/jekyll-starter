@@ -5,4 +5,10 @@ schema: 'Article'
 
 <div id="content" class="center measure-wide f5 pv5 lh-copy ph2">
   {% include article.html %}
+
+  {% assign data = site.staff | where: 'slug', page.staff |first %}
+  {% for object in data %}
+  {{ object.title }}
+  {% endfor %}
+
 </div>
